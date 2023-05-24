@@ -52,7 +52,7 @@ const Box = () => {
           <div className="mb-1" key={index}>
             <button
               className={`btn btn-toggle align-items-center rounded collapsed ${
-                (activeMenu === index && item.subElements.length === 0) || activeSubMenu === null ? "active" : ""
+                activeMenu === index ? "active" : ""
               }`}
               onClick={() => toggleMenu(index)}
             >
